@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vue JS</title>
+</head>
+ <script src="https://cdn.jsdelivr.net/npm/vue"> 
+ </script>
+ <body>
+ <div id="app">
+ {{message}}
+ </div>
+ <P>
+ <button onclick="myFunction()">click me!</button>
+ </p>
+ <script>
+ var myObject=new Vue({
+     el:'#app',
+     data: {message: 'Hello World!'}
+ })
+ function myFunction(){
+     myObject.message="Ensar";
+ }
+     </script>
+</body>
+</html>
